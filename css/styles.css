@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Anton', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  color: #fff;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  flex-wrap: wrap;
+}
+
+/* HEADER */
+
+.header {
+  background-image: url('../img/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding-top: 57px;
+  max-width: 1600px;
+  width: 100%;
+  min-height: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 31px;
+  height: 48px;
+}
+
+.left_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 69px;
+}
+
+.navigation_link {
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+
+.navigation_link:hover {
+  transform: scale(1.2);
+}
+
+.right_nav a {
+  font-size: 17px;
+  letter-spacing: 0.1em;
+}
+
+.header_content {
+  margin-top: 216px;
+  margin-bottom: 322px;
+}
+
+.header_subtitle {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.header_title {
+  font-size: 100px;
+  text-transform: uppercase;
+  margin-top: -11px;
+  margin-left: -2px;
+  font-weight: 400;
+}
+
+.header_button {
+  border: 1px solid #fff;
+  width: 238px;
+  height: 57px;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-size: 17px;
+  letter-spacing: 0.1em;
+  line-height: 3.6;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header_button:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ABOUT */
+
+.about {
+  margin-top: 107px;
+}
+
+.about_title {
+  font-size: 50px;
+  margin-left: 133px;
+  text-transform: uppercase;
+}
+
+.about_content {
+  display: flex;
+  margin-top: 62px;
+  gap: 43px;
+}
+
+.about_subtitle {
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.about_text {
+  flex: 1;
+}
+
+.text {
+  margin-top: 31px;
+  line-height: 1.65;
+  font-family: 'Open Sans', sans-serif;
+  text-align: justify;
+}
+
+.right {
+  position: relative;
+  right: 7px;
+}
+
+.about_images {
+  margin-top: 74px;
+  display: flex;
+  gap: 29.5px;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 114px;
+}
+
+.footer .container {
+  display: flex;
+  gap: 12px;
+}
+
+.footer_content {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin-right: 55px;
+  margin-bottom: 80px;
+}
+
+span {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+/* ADAPTIVE */
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .header_title {
+    font-size: 80px;
+  }
+
+  .header_subtitle {
+    font-size: 26px;
+  }
+
+  .about_title {
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about_subtitle {
+    font-size: 20px;
+  }
+
+  .about_images {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer_content {
+    margin: 0 auto 60px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_content {
+    flex-direction: column;
+  }
+  .navigation {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer {
+    margin-top: 80px;
+  }
+
+  .footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer_content:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+  .navigation,
+  .left_nav,
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .header_title {
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .header_subtitle {
+    font-size: 20px;
+  }
+
+  .header_content {
+    margin-top: 100px;
+    text-align: center;
+    gap: 10px;
+  }
+}
